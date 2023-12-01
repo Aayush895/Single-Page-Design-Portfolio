@@ -1,18 +1,20 @@
+import Header from "./Components/Header/Header"
+
 function App() {
   return (
-    <>
-      {/* Free Consultation
+    <main>
+      <Header />
+      {/* 
 
-  Design solutions made easy
-
-  With over ten years of experience in various design disciplines, I’m your one-stop shop for your design needs.
-
-  Graphic Design
-  UI/UX
-  Apps
-  Photography
-  Illustrations
-  Motion Graphics
+      - Header --> Done
+        - Navbar --> Done
+        - Header-body --> Done
+      - About --> In progress
+      - Work Section --> Todo
+        - Work Header
+        - Custom slider 
+      - Consultation (Aside section) --> Todo
+      - Footer --> Todo
 
   I’m Amy, and I’d love to work on your next project
 
@@ -31,7 +33,7 @@ function App() {
   Free Consultation
 
   Free Consultation */}
-    </>
+    </main>
   )
 }
 

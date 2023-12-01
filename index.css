@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700&display=swap');
+
+:root {
+  --light-purple: #755CDE;
+  --orange: #F6A560;
+  --pink: #F39E9E;
+  --light-red: #EB7565;
+  --light-blue: #61C4B7;
+  --purple: #552049;
+  --black: #030303;
+  --grey: #7A746E;
+  --white: #FFF7F0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 1.125rem;
+}
+
+main {
+  padding: 2rem 0rem;
+}
+
+.dark-button {
+  background-color: var(--black);
+  padding: 20px 30px;
+  color: var(--white);
+  border-radius: 2rem;
+  border: none;
+  font-size: 1rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 -7rem;
+}
+
+#header-body {
+  padding: 4rem 7rem;
+  width: 80%;
+  margin: auto;
+}
+
+.heading {
+  text-align: center;
+}
+
+.heading > h1 {
+  font-size: 56px;
+}
+
+.heading > p {
+  width: 75%;
+  margin: 1.5rem auto;
+  color: var(--grey);
+}
+
+.services-provided {
+  display: grid;
+  grid-template-columns: 1fr 0.5fr 0.5fr 1fr;
+  grid-gap: 1.5rem;
+}
+
+.service-1 {
+  background-color: var(--light-purple);
+  color: var(--white);
+  grid-row: 1 / span 3;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+}
+
+.service-1 > img {
+  text-align: center;
+  float: right;
+  left: 8rem;
+  margin-bottom: 4rem;
+}
+
+.service-1 > p {
+  clear: right;
+}
+
+.service-2 {
+  background-color: var(--orange);
+  color: var(--white);
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.service-2 > img {
+  text-align: center;
+  float: right;
+  left: 8rem;
+  margin-bottom: 2.5rem;
+}
+
+.service-2 > p {
+  clear: right;
+}
+
+.service-3 {
+  background-color: var(--pink);
+  color: var(--white);
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.service-3 > img {
+  text-align: center;
+  float: right;
+  left: 8rem;
+  margin-bottom: 2.5rem;
+}
+
+.service-3 > p {
+  clear: right;
+}
+
+.service-4 {
+  background-color: var(--light-blue);
+  color: var(--white);
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.service-4 > img {
+  text-align: center;
+  float: right;
+  left: 8rem;
+  margin-bottom: 2.5rem;
+}
+
+.service-4 > p {
+  clear: right;
+}
+
+.service-5 {
+  background-color: var(--light-red);
+  color: var(--white);
+  grid-column: 2 / span 2;
+  grid-row: 2 / span 2;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.service-5 > img {
+  text-align: center;
+  float: right;
+  left: 8rem;
+  margin-bottom: 2.5rem;
+}
+
+.service-5 > p {
+  clear: right;
+}
+
+.service-6 {
+  background-color: var(--purple);
+  color: var(--white);
+  grid-row: 2 / span 2;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.service-6 > img {
+  text-align: center;
+  float: right;
+  left: 8rem;
+  margin-bottom: 2.5rem;
+}
+
+.service-6 > p {
+  clear: right;
+}
