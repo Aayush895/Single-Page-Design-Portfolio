@@ -1,15 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700&display=swap');
 
 :root {
-  --light-purple: #755CDE;
-  --orange: #F6A560;
-  --pink: #F39E9E;
-  --light-red: #EB7565;
-  --light-blue: #61C4B7;
+  --light-purple: #755cde;
+  --orange: #f6a560;
+  --pink: #f39e9e;
+  --light-red: #eb7565;
+  --light-blue: #61c4b7;
   --purple: #552049;
   --black: #030303;
-  --grey: #7A746E;
-  --white: #FFF7F0;
+  --grey: #7a746e;
+  --white: #fff7f0;
 }
 
 * {
@@ -21,6 +21,7 @@
 body {
   font-family: 'Plus Jakarta Sans', sans-serif;
   font-size: 1.125rem;
+  overflow-x: hidden;
 }
 
 main {
@@ -29,14 +30,16 @@ main {
 
 .dark-button {
   background-color: var(--black);
-  padding: 20px 30px;
+  padding: 15px 45px;
   color: var(--white);
   border-radius: 2rem;
   border: none;
   font-size: 1rem;
+  cursor: pointer;
 }
 
-nav {
+nav,
+footer {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -61,6 +64,7 @@ nav {
   width: 75%;
   margin: 1.5rem auto;
   color: var(--grey);
+  line-height: 1.5rem;
 }
 
 .services-provided {
@@ -179,4 +183,70 @@ nav {
 
 .service-6 > p {
   clear: right;
+}
+
+#about {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: 2rem auto;
+  padding: 1rem 5rem;
+}
+
+.profile-container {
+  width: 35%;
+}
+
+.profile-container > img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.info-container {
+  width: 51%;
+}
+
+.info-container > h1 {
+  margin-bottom: 2rem;
+}
+
+.info-container > p {
+  color: var(--grey);
+  margin-bottom: 2rem;
+  line-height: 2rem;
+}
+
+.red-button {
+  background-color: var(--light-red);
+  padding: 15px 45px;
+  color: var(--white);
+  border-radius: 2rem;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+#consultation-container {
+  background-color: var(--black);
+  color: var(--white);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+  margin: 5rem auto;
+  padding: 4rem 3rem;
+  border-radius: 0.5rem;
+}
+
+.counsel-info {
+  width: 60%;
+}
+
+.counsel-info > h1 {
+  margin-bottom: 1.5rem;
+}
+
+.counsel-info > p {
+  line-height: 2rem;
 }
