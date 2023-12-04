@@ -250,3 +250,40 @@ footer {
 .counsel-info > p {
   line-height: 2rem;
 }
+
+#work {
+  text-align: center;
+  margin-top: 5rem;
+}
+
+.work-wrapper {
+  margin-top: 2.5rem;
+}
+
+.work-wrapper > img {
+  width: 5%;
+  border-radius: 50%;
+  padding: 1rem;
+  background-color: var(--black);
+  margin: 3rem 1rem;
+  cursor: pointer;
+}
+
+.work-container {
+  display: grid;
+  grid-template-columns: repeat(5, 40rem);
+  align-items: center;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+}
+
+.work-container::-webkit-scrollbar {
+  display: none;
+}
+
+.work-container > img {
+  width: 95%;
+  margin: auto;
+  border-radius: 1rem;
+  cursor: pointer;
+}
