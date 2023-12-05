@@ -22,19 +22,19 @@ const Work = () => {
       </div>
       <div className="work-wrapper">
         <div className="work-container" ref={galleryRef}>
-          <img src="../../src/assets/image-slide-1.jpg" alt="image-1" />
-          <img src="../../src/assets/image-slide-2.jpg" alt="image-2" />
-          <img src="../../src/assets/image-slide-3.jpg" alt="image-3" />
-          <img src="../../src/assets/image-slide-4.jpg" alt="image-4" />
-          <img src="../../src/assets/image-slide-5.jpg" alt="image-5" />
+          <img src="../../images/image-slide-1.jpg" alt="image-1" />
+          <img src="../../images/image-slide-2.jpg" alt="image-2" />
+          <img src="../../images/image-slide-3.jpg" alt="image-3" />
+          <img src="../../images/image-slide-4.jpg" alt="image-4" />
+          <img src="../../images/image-slide-5.jpg" alt="image-5" />
         </div>
         <img
-          src="../../src/assets/icon-arrow-left.svg"
+          src="../../images/icon-arrow-left.svg"
           alt="prev-arrow"
           onClick={handlePrevScroll}
         />
         <img
-          src="../../src/assets/icon-arrow-right.svg"
+          src="../../images/icon-arrow-right.svg"
           alt="next-arrow"
           onClick={handleNextScroll}
         />

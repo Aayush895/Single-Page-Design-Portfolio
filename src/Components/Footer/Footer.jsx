@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer>
       <div id="nav-logo">
-        <img src="../../src/assets/logo.svg" alt="logo" />
+        <img src="../../images/logo.svg" alt="logo" />
       </div>
       <div id="nav-button">
         <Buttons className="dark-button" />
