@@ -1,11 +1,6 @@
 import { useRef } from 'react'
 
 const Work = () => {
-  // const firstImgRef = useRef(null)
-  // const secondImgRef = useRef(null)
-  // const thirdImgRef = useRef(null)
-  // const fourthImgRef = useRef(null)
-  // const fifthImgRef = useRef(null)
   const galleryRef = useRef(null)
 
   const handlePrevScroll = () => {
@@ -15,7 +10,7 @@ const Work = () => {
   }
 
   const handleNextScroll = () => {
-    if(galleryRef.current) {
+    if (galleryRef.current) {
       galleryRef.current.scrollLeft += 450
     }
   }
@@ -38,7 +33,11 @@ const Work = () => {
           alt="prev-arrow"
           onClick={handlePrevScroll}
         />
-        <img src="../../src/assets/icon-arrow-right.svg" alt="next-arrow" onClick={handleNextScroll}/>
+        <img
+          src="../../src/assets/icon-arrow-right.svg"
+          alt="next-arrow"
+          onClick={handleNextScroll}
+        />
       </div>
     </div>
   )
