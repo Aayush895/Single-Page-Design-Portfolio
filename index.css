@@ -28,16 +28,6 @@ main {
   padding: 2rem 0rem;
 }
 
-.dark-button {
-  background-color: var(--black);
-  padding: 15px 45px;
-  color: var(--white);
-  border-radius: 2rem;
-  border: none;
-  font-size: 1rem;
-  cursor: pointer;
-}
-
 nav,
 footer {
   display: flex;
@@ -217,16 +207,6 @@ footer {
   line-height: 2rem;
 }
 
-.red-button {
-  background-color: var(--light-red);
-  padding: 15px 45px;
-  color: var(--white);
-  border-radius: 2rem;
-  border: none;
-  font-size: 1rem;
-  cursor: pointer;
-}
-
 #consultation-container {
   background-color: var(--black);
   color: var(--white);
@@ -269,6 +249,10 @@ footer {
   cursor: pointer;
 }
 
+.work-wrapper > img:hover {
+  background-color: var(--light-purple);
+}
+
 .work-container {
   display: grid;
   grid-template-columns: repeat(5, 40rem);
@@ -286,4 +270,112 @@ footer {
   margin: auto;
   border-radius: 1rem;
   cursor: pointer;
+}
+
+.dark-button {
+  background-color: var(--black);
+  padding: 15px 45px;
+  color: var(--white);
+  border-radius: 2rem;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.dark-button:hover {
+  background-color: var(--light-purple);
+}
+
+.red-button {
+  background-color: var(--light-red);
+  padding: 15px 45px;
+  color: var(--white);
+  border-radius: 2rem;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.red-button:hover {
+  background-color: var(--orange);
+}
+
+@media (max-width: 834px) {
+  nav,
+  footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  #header-body {
+    width: 100%;
+  }
+
+  .heading > p {
+    width: 100%;
+  }
+
+  .services-provided {
+    display: grid;
+    grid-template-columns: 1fr 0.5fr 0.5fr;
+    grid-gap: 1.5 rem;
+  }
+
+  .service-1 {
+    grid-row: 1 / span 2;
+  }
+
+  .service-2 {
+    grid-column: 2 / span 1;
+  }
+
+  .service-3 {
+    grid-column: 3 / span 1;
+  }
+
+  .service-4 {
+    grid-row: 3;
+    grid-column: 1 / span 1;
+  }
+
+  .service-5 {
+    grid-row: 2;
+    grid-column: 2 / span 2;
+  }
+
+  .service-6 {
+    grid-column: 2 / span 2;
+    grid-row: 3;
+  }
+
+  #about {
+    width: 100%;
+    padding: 1rem 2.5rem;
+  }
+
+  .info-container {
+    width: 51%;
+  }
+
+  .profile-container {
+    width: 35%;
+  }
+
+  .work-wrapper > img {
+    width: 7%;
+    border-radius: 50%;
+    padding: 1rem;
+  }
+
+  #consultation-container {
+    flex-direction: column;
+    width: 85%;
+  }
+
+  .counsel-info {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
 }
